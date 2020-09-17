@@ -1,0 +1,20 @@
+<div class="container-fluid banner">
+  <div class="wrapper">
+    <div class="weather text-center" *ngFor="let wC of weatherColombia.weather">
+      <img class="img" [src]="wC.main | icons " alt="">
+    </div>
+    <div class="temp text-center">
+      <span class="content">
+        {{ temp | grades }}°
+      </span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-2">
+      <h1 class="title">
+        {{ weatherColombia.name }}
+      </h1>
+      <img class="img-fluid" src="assets/images/flag.png" alt="">
+    </div>
+  </div>
+</div>

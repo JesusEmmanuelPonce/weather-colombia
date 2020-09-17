@@ -1,0 +1,36 @@
+// Banner styles
+.banner
+  background: url('/assets/images/bg-banner.jpg')
+  background-size: cover
+  border-radius: 1rem
+  padding: 3rem 5rem
+  height: 60vh
+  .title,
+  .temp,
+  .weather
+    color: #fff
+    .img
+      width: 2.5rem
+  .title
+    font-weight: 600
+
+// Icons
+.wrapper
+  overflow: hidden
+  position: absolute
+  top: 5rem
+  left: 0
+  .weather
+    border-radius: 0 20px 20px 0
+    padding: .7rem
+    background: linear-gradient(90deg, rgba(2,0,36,1) 8%, rgba(9,9,121,1) 55%, rgba(0,31,255,1) 98%)
+    &:hover
+      cursor: pointer
+  .temp
+    border-radius: 0 20px 20px 0
+    padding: 1rem
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(103,9,121,1) 0%, rgba(118,61,239,1) 98%)
+    &:hover
+      cursor: pointer
+
+
