@@ -18,8 +18,6 @@ export class CollaboratorsComponent{
         this.weatherParis = data;
         this.humidity = data.main.humidity;
         this.temp = data.main.temp;
-        console.log(this.weatherParis);
       });
    }
-
 }

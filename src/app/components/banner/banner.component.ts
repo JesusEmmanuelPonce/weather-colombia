@@ -16,7 +16,6 @@ export class BannerComponent {
       .subscribe((data: any) => {
         this.weatherColombia = data;
         this.temp = data.main.temp;
-        // console.log(this.weatherColombia);
       });
    }
 

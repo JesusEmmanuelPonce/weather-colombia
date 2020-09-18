@@ -1,9 +1,27 @@
 <div class="container-fluid forecast">
-  <div class="row">
+  <div class="row mb-5">
     <div class="col">
       <h2>
-        <span class="three">3 day</span> Forecast
+        <span class="title">3 days</span> Forecast
       </h2>
+    </div>
+  </div>
+  <div class="p-4  my-3 card" *ngFor="let d of data">
+    <div class="row">
+      <div class="col align-self-center">
+        <img class="img" [src]="d.weather | icons" alt="">
+      </div>
+      <div class="col align-self-center">
+        <span class="font-weight-bold">
+          {{ d.day }}
+        </span>
+        <span class="d-block">
+          {{ d.weather }}
+        </span>
+      </div>
+      <div class="col align-self-center p-0 m-0">
+        <span class="font-weight-bold">{{ d.max }}°</span> / <span class="font-weight-bold">{{ d.min }}°</span>
+      </div>
     </div>
   </div>
 </div>

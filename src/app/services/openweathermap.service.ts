@@ -11,7 +11,7 @@ export class OpenweathermapService {
    }
    getWeatherColombia(): any{
     const apiID = '10bc1d4cce2c287fb40bee7e26088566';
-    const nameColombia = 'colombia';
+    const nameColombia = 'bogota';
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${nameColombia}&appid=${apiID}`;
     return this.http.get(url);
    }
@@ -26,7 +26,7 @@ export class OpenweathermapService {
   //  }
    getWeatherParis(): any{
     const apiID = '10bc1d4cce2c287fb40bee7e26088566';
-    const nameFrancia = 'francia';
+    const nameFrancia = 'paris';
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${nameFrancia}&appid=${apiID}`;
     return this.http.get(url);
    }
